@@ -16,7 +16,8 @@ public class ConnectionFactory {
 	// Obtém conexão com o banco de dados
 	public static Connection obtemConexao() throws SQLException {
 		return DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/vendas?useTimezone=true&serverTimezone=America/Sao_Paulo&user=root&password=fluminense");
+				.getConnection("jdbc:mysql://localhost:3306/vendas?useLegacyDatetimeCode=false&serverTimezone=America/Sao_Paulo&user=alunos&password=alunos&useSSL=false");
 	}
+	
 
 }
